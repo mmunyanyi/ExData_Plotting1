@@ -1,5 +1,7 @@
 sourceDataFile <- "C:/DataScience/ExDataAssignment1/household_power_consumption.txt"
 data <- read.table(sourceDataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
+
+#Triming data to only required dataset
 trimData <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
 #Convert text to date
